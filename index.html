@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Club Portal - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+  
+
+</style>
+  <header>
+    <h1>Campus Club Portal</h1>
+    <p>Welcome to the Campus Club Portal!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Explore Activities</a>
+    <a href="join-club.html">Join a Club</a>
+  </nav>
+
+  <main>
+
+    <div class="section-box">
+      <h2 id="mainHeading">Discover Your Campus Clubs</h2>
+      <p>
+        Our campus has many clubs for students to join. This portal helps
+        you explore club activities and show interest in the clubs you like.
+      </p>
+      <button onclick="changeHeading()">Change Heading</button>
+    </div>
+
+    <div class="section-box" id="featuredSection">
+      <h2>Featured Activities</h2>
+      <p>Here are some of the featured activities happening on campus.</p>
+
+      <div class="card-container">
+
+        <div class="card" id="card1">
+          <h3>Photography Walk</h3>
+          <p>Club: Photography Club</p>
+          <p>Category: Arts</p>
+        </div>
+
+        <div class="card">
+          <h3>Coding Workshop</h3>
+          <p>Club: Coding Club</p>
+          <p>Category: Technology</p>
+        </div>
+
+        <div class="card">
+          <h3>Football Match</h3>
+          <p>Club: Sports Club</p>
+          <p>Category: Sports</p>
+        </div>
+
+      </div>
+
+      <button onclick="changeCardColor()">Change Card Colour</button>
+    </div>
+
+    <div class="section-box">
+      <h2>Show or Hide Featured Activities</h2>
+      <p>Click the button below to show or hide the featured activities.</p>
+      <button onclick="toggleFeatured()">Show / Hide Featured Activities</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Campus Club Portal - Front-end Demonstration</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Club Portal - Join a Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Campus Club Portal</h1>
+    <p>Join a Club</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Explore Activities</a>
+    <a href="join-club.html">Join a Club</a>
+  </nav>
+
+  <main>
+
+    <div class="section-box">
+      <h2>Show or Hide the Form</h2>
+      <button onclick="toggleForm()">Show / Hide Form</button>
+    </div>
+
+    <div class="section-box" id="formSection">
+      <h2 id="formHeading">Club Interest Form</h2>
+      <p>Fill in the form below to show your interest in a club.</p>
+
+      <button onclick="changeFormHeadingSize()">Change Heading Font Size</button>
+
+      <form>
+        <label for="studentName">Student Name</label>
+        <input id="studentName" type="text" placeholder="Enter your name">
+
+        <label for="clubName">Club Name</label>
+        <input id="clubName" type="text" placeholder="Enter club name">
+
+        <label for="areaOfInterest">Area of Interest</label>
+        <input id="areaOfInterest" type="text" placeholder="Example: Photography">
+
+        <label for="yearOfStudy">Year of Study</label>
+        <input id="yearOfStudy" type="text" placeholder="Example: 1st Year">
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+
+      <p class="message" id="formMessage"></p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Campus Club Portal - Front-end Demonstration</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

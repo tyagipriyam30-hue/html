@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Club Portal - Explore Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Campus Club Portal</h1>
+    <p>Explore Activities and Events</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Explore Activities</a>
+    <a href="join-club.html">Join a Club</a>
+  </nav>
+
+  <main>
+
+    <div class="section-box">
+      <h2>Activity Listings</h2>
+      <p>Click the Interested button on any card to show your interest.</p>
+
+      <div class="card-container">
+
+        <div class="card">
+          <h3>Photography Walk</h3>
+          <p>Club: Photography Club</p>
+          <p>Category: Arts</p>
+          <p>Venue: Main Gate</p>
+          <button id="btn1" onclick="interested1()">Interested</button>
+          <p class="message" id="msg1"></p>
+        </div>
+
+        <div class="card" id="act2">
+          <h3>Coding Workshop</h3>
+          <p>Club: Coding Club</p>
+          <p>Category: Technology</p>
+          <p>Venue: Computer Lab 2</p>
+          <button id="btn2" onclick="interested2()">Interested</button>
+          <p class="message" id="msg2"></p>
+        </div>
+
+        <div class="card">
+          <h3>Football Match</h3>
+          <p>Club: Sports Club</p>
+          <p>Category: Sports</p>
+          <p>Venue: College Ground</p>
+          <button id="btn3" onclick="interested3()">Interested</button>
+          <p class="message" id="msg3"></p>
+        </div>
+
+        <div class="card">
+          <h3>Debate Competition</h3>
+          <p>Club: Debate Club</p>
+          <p>Category: Literary</p>
+          <p>Venue: Seminar Hall</p>
+          <button id="btn4" onclick="interested4()">Interested</button>
+          <p class="message" id="msg4"></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-box">
+      <h2>Search an Activity</h2>
+      <p>Type an activity name below and click Show Activity.</p>
+      <input id="activityInput" type="text" placeholder="Enter activity name">
+      <button onclick="showActivity()">Show Activity</button>
+      <p class="message" id="activityResult"></p>
+      <p class="message" id="searchMsg"></p>
+    </div>
+
+    <div class="section-box">
+      <h2>Change an Activity Card</h2>
+      <p>Click the button to change the appearance of the Coding Workshop card.</p>
+      <button onclick="changeActivityCard()">Change Coding Workshop Card</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Campus Club Portal - Front-end Demonstration</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
